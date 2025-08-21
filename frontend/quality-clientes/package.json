@@ -1,0 +1,12 @@
+{
+  "name": "quality-clientes",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ng serve --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@angular/core": "^17.0.0",
+    "@angular/material": "^17.0.0",
+    "rxjs": "^7.8.1"
+  }
+}

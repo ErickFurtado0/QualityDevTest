@@ -1,0 +1,25 @@
+<div class="card card-shadow">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span>Detalhes do Cliente</span>
+    <a class="btn btn-sm btn-outline-secondary" routerLink="/">Voltar</a>
+  </div>
+  <div class="card-body">
+    <div *ngIf="error" class="text-danger mb-3">{{error}}</div>
+    <div *ngIf="cliente">
+      <dl class="row">
+        <dt class="col-sm-3">Código</dt><dd class="col-sm-9">{{cliente.Codigo}}</dd>
+        <dt class="col-sm-3">Nome</dt><dd class="col-sm-9">{{cliente.Nome}}</dd>
+        <dt class="col-sm-3">CPF/CNPJ</dt><dd class="col-sm-9">{{cliente.CPF_CNPJ}}</dd>
+        <dt class="col-sm-3">CEP</dt><dd class="col-sm-9">{{cliente.CEP}}</dd>
+        <dt class="col-sm-3">Logradouro</dt><dd class="col-sm-9">{{cliente.Logradouro}}</dd>
+        <dt class="col-sm-3">Endereço</dt><dd class="col-sm-9">{{cliente.Endereco}}, {{cliente.Numero}}</dd>
+        <dt class="col-sm-3">Bairro</dt><dd class="col-sm-9">{{cliente.Bairro}}</dd>
+        <dt class="col-sm-3">Cidade/UF</dt><dd class="col-sm-9">{{cliente.Cidade}} - {{cliente.UF}}</dd>
+        <dt class="col-sm-3">Complemento</dt><dd class="col-sm-9">{{cliente.Complemento}}</dd>
+        <dt class="col-sm-3">Fone</dt><dd class="col-sm-9">{{cliente.Fone}}</dd>
+        <dt class="col-sm-3">Limite Crédito</dt><dd class="col-sm-9">{{cliente.LimiteCredito | currency:'BRL':'symbol'}}</dd>
+        <dt class="col-sm-3">Validade</dt><dd class="col-sm-9">{{cliente.Validade}}</dd>
+      </dl>
+    </div>
+  </div>
+</div>

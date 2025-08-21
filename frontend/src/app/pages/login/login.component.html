@@ -1,0 +1,19 @@
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <div class="card card-shadow mt-5">
+      <div class="card-header">Login</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label class="form-label">Usuário</label>
+          <input class="form-control" [(ngModel)]="username" placeholder="admin">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Senha</label>
+          <input type="password" class="form-control" [(ngModel)]="password" placeholder="123456">
+        </div>
+        <div class="text-danger mb-2" *ngIf="error">{{error}}</div>
+        <button class="btn btn-primary w-100" (click)="submit()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
